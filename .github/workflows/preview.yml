@@ -1,0 +1,23 @@
+name: Preview build
+on:
+  push:
+    branches: ['preview/**']
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npx --no-install vite build --config vite.pages.config.ts
+      - run: |
+          cd dist/pages
+          git init -q -b out
+          git config user.name preview && git config user.email preview@example.invalid
+          git add -A && git commit -qm "build ${GITHUB_SHA}"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${GITHUB_REPOSITORY}.git" out:"dist/${GITHUB_REF_NAME#preview/}"
