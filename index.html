@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SPHEREx Time Lab · Watch the infrared sky change</title>
+  <meta name="description" content="A public web tool that plays NASA SPHEREx infrared images of any patch of sky as a short film, so anyone can spot moving and variable objects.">
+  <meta name="theme-color" content="#F7F3E6">
+  <link rel="icon" href="/spherex-time-lab-source/assets/icon-DPe28JuX.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&amp;display=swap">
+  <script>
+    // Old deep links and embeds pointed at the site root. Send them to the lab with the same query.
+    (function () {
+      var q = new URLSearchParams(location.search);
+      // lang alone is the site language switch, so it stays on this page.
+      var keys = ['ra', 'dec', 'fov', 'start', 'end', 'detector', 'release', 'survey', 'search', 'embed'];
+      if (keys.some(function (k) { return q.has(k); })) location.replace('lab/' + location.search + location.hash);
+    })();
+  </script>
+  <script type="module" crossorigin src="/spherex-time-lab-source/assets/modulepreload-polyfill-Cf3xff8G.js"></script>
+  <script type="module" crossorigin src="/spherex-time-lab-source/assets/site-i18n-CAauwECI.js"></script>
+  <link rel="stylesheet" crossorigin href="/spherex-time-lab-source/assets/site-i18n-YnKUl71W.css">
+</head><body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="brand" href="./">
+        <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20512%20512'%3e%3cpath%20d='M32%20100a16%2016%200%200%201%2016-16h48a16%2016%200%200%201%2016%2016v28h272a16%2016%200%200%201%2016%2016v276H32z'%20fill='%23FFA142'/%3e%3cpath%20d='M84%2048a16%2016%200%200%201%2016-16h176l72%2072v300H84z'%20fill='%23FFFDF8'/%3e%3cpath%20d='M276%2032v56a16%2016%200%200%200%2016%2016h56z'%20fill='%23B1D5F0'/%3e%3crect%20x='124'%20y='132'%20width='180'%20height='16'%20rx='8'%20fill='%23B1D5F0'/%3e%3crect%20x='124'%20y='170'%20width='180'%20height='16'%20rx='8'%20fill='%23B1D5F0'/%3e%3cpath%20d='M118%20206h350a12%2012%200%200%201%2011%2016l-60%20190a14%2014%200%200%201-13%2010H46a10%2010%200%200%201-10-13z'%20fill='%237FB4F5'/%3e%3c/svg%3e" alt="" width="40" height="40">
+        <span><b>SPHEREx Time Lab</b><small>NASA Space Apps Challenge 2026</small></span>
+      </a>
+      <nav class="tabs" aria-label="Main">
+        <a class="tab active" aria-current="page" href="./"><span class="tab-no">01</span>Overview</a>
+        <a class="tab" href="lab/"><span class="tab-no">02</span>Lab</a>
+        <a class="tab" href="about/"><span class="tab-no">03</span>About</a>
+      </nav>
+      <label class="lang-picker"><span>Language</span><select data-site-language aria-label="Language / Мова"><option value="en">English</option><option value="uk">Українська</option></select></label>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <main id="main" class="sheet">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">NASA Space Apps Challenge 2026 · Planet X and SPHEREx</p>
+          <h1><span>SPHEREx</span><span>Time Lab</span></h1>
+          <p class="lead">Enter the coordinates of any patch of sky and watch every SPHEREx infrared exposure of it play like a short film. Nearby stars, brown dwarfs, asteroids and comets give themselves away by moving; variable stars by changing brightness.</p>
+          <div class="btn-row">
+            <a class="btn" href="lab/">Open the lab</a>
+            <a class="btn ghost" href="#contents">What is inside</a>
+          </div>
+        </div>
+
+        <div class="hero-folder" aria-hidden="true">
+          <div class="hf-back"></div>
+          <div class="hf-paper">
+            <span class="hf-fold"></span>
+            <p class="hf-title">Contents</p>
+            <ul>
+              <li><a href="lab/" tabindex="-1"><b>02</b> Lab</a></li>
+              <li><a href="about/" tabindex="-1"><b>03</b> About</a></li>
+            </ul>
+          </div>
+          <div class="hf-front">
+            <strong>SPHEREx<br>Time Lab</strong>
+            <span class="line">Space Apps<br>2026</span>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <p class="eyebrow">How it works</p>
+        <h2>From coordinates to a moving dot</h2>
+        <div class="steps">
+          <div class="folder"><span class="label">Choose</span>
+            <h3>Pick a patch of sky</h3>
+            <p>Click the sky atlas, type RA and Dec, look an object up by name, or start from one of the five challenge test targets.</p>
+          </div>
+          <div class="folder green"><span class="label">Find</span>
+            <h3>Find SPHEREx exposures</h3>
+            <p>The lab asks NASA/IPAC’s Infrared Science Archive which Data Release 1 images cover that spot, then cuts the same field out of each one.</p>
+          </div>
+          <div class="folder"><span class="label">Compare</span>
+            <h3>Blink, subtract, measure</h3>
+            <p>Play the frames on one north-up grid, subtract two dates so that fixed stars cancel, and measure brightness in the science laboratory.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="band">
+        <div>
+          <p class="eyebrow" style="color:#B1D5F0">Why motion matters</p>
+          <h2>Pluto was found by blinking two photographs.</h2>
+          <p>Comparing images of the same field taken at different times is one of the oldest discovery methods in astronomy. SPHEREx maps the whole sky every six months in 102 near-infrared colours, which is far more than anyone can inspect alone.</p>
+          <p>The Time Lab makes that inspection quick enough for anyone to help, and keeps every step traceable to the archive.</p>
+          <a class="btn green" href="lab/">Try it on the sky</a>
+        </div>
+        <div class="blink-demo" role="img" aria-label="Animated illustration of one star moving against fixed background stars">
+          <i style="width:5px;height:5px;left:18%;top:22%"></i>
+          <i style="width:3px;height:3px;left:72%;top:18%"></i>
+          <i style="width:7px;height:7px;left:64%;top:70%"></i>
+          <i style="width:4px;height:4px;left:28%;top:78%"></i>
+          <i style="width:3px;height:3px;left:84%;top:44%"></i>
+          <i style="width:4px;height:4px;left:12%;top:52%"></i>
+          <i class="mover"></i>
+          <span>epoch 1 → 2 → 3</span>
+        </div>
+      </section>
+
+      <section>
+        <p class="eyebrow">In the lab</p>
+        <h2>Tools you will find</h2>
+        <div class="grid three">
+          <div class="folder paper"><span class="label">Sky atlas</span>
+            <h3>SPHEREx DR1 all-sky map</h3>
+            <p>Browse the released DR1 sky cube in any of its spectral channels and see which exposures cover the map centre.</p>
+          </div>
+          <div class="folder paper"><span class="label">Blink</span>
+            <h3>Time series player</h3>
+            <p>Exposures sorted by UTC time and shown on a common sky grid with one brightness scale, so differences are not caused by the display.</p>
+          </div>
+          <div class="folder paper"><span class="label">Difference</span>
+            <h3>Current minus reference</h3>
+            <p>Brightness is converted back to MJy/sr before subtracting. A moving object leaves a dark and a bright spot.</p>
+          </div>
+          <div class="folder paper"><span class="label">Gaia DR3</span>
+            <h3>Catalogue overlay</h3>
+            <p>Gaia stars are moved with their proper motions to the date of every frame, so fast stars land where they really are.</p>
+          </div>
+          <div class="folder paper"><span class="label">Science lab</span>
+            <h3>Photometry and spectra</h3>
+            <p>Point-source fits on the original FITS pixels give fluxes with errors, spectra across wavelengths and light curves.</p>
+          </div>
+          <div class="folder paper"><span class="label">Share</span>
+            <h3>Links, embeds, records</h3>
+            <p>Coordinates live in the URL, the lab can be embedded in other sites, and every series can be saved with its provenance.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contents">
+        <p class="eyebrow">Contents</p>
+        <h2>Where to go next</h2>
+        <div class="table-wrap contents-table">
+          <table>
+            <thead><tr><th>No.</th><th>Section</th><th>What is inside</th><th></th></tr></thead>
+            <tbody>
+              <tr><td class="no">01</td><td><b>Overview</b></td><td>What the Time Lab is and why blinking the sky matters.</td><td>You are here</td></tr>
+              <tr><td class="no">02</td><td><b>Lab</b></td><td>The tool itself: sky atlas, archive search, blink, difference images, Gaia overlay, science lab.</td><td><a href="lab/">Open →</a></td></tr>
+              <tr><td class="no">03</td><td><b>About</b></td><td>The challenge, the project and its data sources.</td><td><a href="about/">Open →</a></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <div class="folder green" style="margin-top:2.5rem"><span class="label">Start here</span>
+          <h2 style="margin-bottom:.4em">Not sure where to look?</h2>
+          <p>Open the lab and pick Barnard’s Star, the fastest-moving star in our sky, or WISE 0855−0714, the coldest brown dwarf known. Each test target opens with a detector chosen for the object.</p>
+          <a class="btn" href="lab/">Open the lab</a>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <p>© <span data-year>2026</span> SPHEREx Time Lab · NASA Space Apps Challenge 2026. Not an official NASA product.</p>
+      <nav aria-label="Footer">
+        <a href="lab/">Open the lab</a>
+        <a href="about/">About</a>
+        <a href="https://github.com/RomanTkachenko-dev/spherex-time-lab-source" rel="noopener">Source code</a>
+        <a href="https://irsa.ipac.caltech.edu/Missions/spherex.html" rel="noopener">SPHEREx at IRSA</a>
+      </nav>
+    </div>
+  </footer>
+  <script>document.querySelectorAll('[data-year]').forEach(function (el) { el.textContent = new Date().getFullYear(); });</script>
+</body>
+</html>

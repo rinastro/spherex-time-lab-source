@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About · SPHEREx Time Lab</title>
+  <meta name="description" content="The challenge, what SPHEREx Time Lab does against the brief, and the data it uses.">
+  <meta name="theme-color" content="#F7F3E6">
+  <link rel="icon" href="/spherex-time-lab-source/assets/icon-DPe28JuX.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&amp;display=swap">
+  <script type="module" crossorigin src="/spherex-time-lab-source/assets/modulepreload-polyfill-Cf3xff8G.js"></script>
+  <script type="module" crossorigin src="/spherex-time-lab-source/assets/site-i18n-CAauwECI.js"></script>
+  <link rel="stylesheet" crossorigin href="/spherex-time-lab-source/assets/site-i18n-YnKUl71W.css">
+</head><body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="brand" href="../">
+        <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20512%20512'%3e%3cpath%20d='M32%20100a16%2016%200%200%201%2016-16h48a16%2016%200%200%201%2016%2016v28h272a16%2016%200%200%201%2016%2016v276H32z'%20fill='%23FFA142'/%3e%3cpath%20d='M84%2048a16%2016%200%200%201%2016-16h176l72%2072v300H84z'%20fill='%23FFFDF8'/%3e%3cpath%20d='M276%2032v56a16%2016%200%200%200%2016%2016h56z'%20fill='%23B1D5F0'/%3e%3crect%20x='124'%20y='132'%20width='180'%20height='16'%20rx='8'%20fill='%23B1D5F0'/%3e%3crect%20x='124'%20y='170'%20width='180'%20height='16'%20rx='8'%20fill='%23B1D5F0'/%3e%3cpath%20d='M118%20206h350a12%2012%200%200%201%2011%2016l-60%20190a14%2014%200%200%201-13%2010H46a10%2010%200%200%201-10-13z'%20fill='%237FB4F5'/%3e%3c/svg%3e" alt="" width="40" height="40">
+        <span><b>SPHEREx Time Lab</b><small>NASA Space Apps Challenge 2026</small></span>
+      </a>
+      <nav class="tabs" aria-label="Main">
+        <a class="tab" href="../"><span class="tab-no">01</span>Overview</a>
+        <a class="tab" href="../lab/"><span class="tab-no">02</span>Lab</a>
+        <a class="tab active" aria-current="page" href="../about/"><span class="tab-no">03</span>About</a>
+      </nav>
+      <label class="lang-picker"><span>Language</span><select data-site-language aria-label="Language / Мова"><option value="en">English</option><option value="uk">Українська</option></select></label>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <main id="main" class="sheet">
+      <div class="page-intro">
+        <p class="eyebrow">Section 03 · About</p>
+        <h1 style="font-size:clamp(2rem,4.4vw,3.2rem)">The story behind the Time Lab</h1>
+        <p class="lead">SPHEREx Time Lab is our answer to the “Planet X and SPHEREx” challenge of the 2026 NASA Space Apps Challenge: a public web tool that shows how the SPHEREx sky changes over time.</p>
+      </div>
+
+      <div class="grid two">
+        <div class="folder green"><span class="label">The challenge</span>
+          <h3>Too much sky for one person</h3>
+          <p>Since 2025 SPHEREx has mapped the whole sky every six months in 102 near-infrared bands. Comets, asteroids, nearby stars and brown dwarfs reveal themselves by shifting between images. The brief: let anyone enter a position and see its images play like a short film.</p>
+        </div>
+        <div class="folder"><span class="label">Our approach</span>
+          <h3>Simple to start, honest when measuring</h3>
+          <p>One sky atlas and one play button are enough to begin. When you want numbers, the lab measures the original FITS pixels and records where every value came from.</p>
+        </div>
+      </div>
+
+      <div class="prose">
+        <h2>What we built against the brief</h2>
+        <ul class="checklist">
+          <li>Enter RA and Dec, or an object name, and play every matching SPHEREx exposure as an animation.</li>
+          <li>Includes presets for the five targets named in the brief: Barnard’s Star, Epsilon Indi B, WISE 0855−0714, RW Aurigae and R Draconis, each one click away.</li>
+          <li>Easy to update: exposures are queried live from IRSA, and the release (DR1 or QR3) is a single setting.</li>
+          <li>The 102 bands: the sky atlas shows any channel of the DR1 all-sky cube, searches can target one detector, and the science lab builds spectra and light curves from the exposures.</li>
+          <li>Subtracting images taken at different times: a difference view of the current frame minus a reference frame, computed from the displayed PNGs for visual inspection.</li>
+          <li>Set the mosaic zoom in the URL or choose the exposure cutout size in the search form.</li>
+          <li>Overlays from another mission: Gaia DR3 stars moved with their proper motions to the date of each frame.</li>
+          <li>Query by URL and embed the lab in other websites.</li>
+          <li>Metadata on screen: observation times, wavelengths, quality-flag maps and a downloadable record for each series.</li>
+          <li>Built on public tools: Astropy for FITS and WCS, Aladin Lite from CDS for the sky atlas.</li>
+        </ul>
+
+        <h2 id="team">Team</h2>
+        <div class="team">
+          <div class="person"><span class="avatar" aria-hidden="true">DP</span><div>
+            <h3>Daryna Provolovska</h3>
+            <p class="role">MSc student, Astronomy · Taras Shevchenko National University of Kyiv</p>
+            <a href="https://github.com/rinastro" rel="noopener">GitHub</a>
+          </div></div>
+          <div class="person"><span class="avatar" aria-hidden="true">RT</span><div>
+            <h3>Roman Tkachenko</h3>
+            <p class="role">Developer · SPHEREx Time Lab</p>
+            <a href="https://github.com/RomanTkachenko-dev" rel="noopener">GitHub</a>
+          </div></div>
+          <div class="person"><span class="avatar" aria-hidden="true">KI</span><div>
+            <h3>Kira Ishchenko</h3>
+            <p class="role">MSc student, Bioinformatics and Biomedical Data Analysis · Kyiv School of Economics</p>
+            <p>Analyst with a background in software engineering and statistics.</p>
+          </div></div>
+          <div class="person"><span class="avatar" aria-hidden="true">VB</span><div>
+            <h3>Volodymyr Buhlak</h3>
+            <p class="role">MSc student, Astrophysics · Ivan Franko National University of Lviv</p>
+            <p>Works on photoionization modelling of nebular environments. Also builds front-end and full-stack websites on whatever topic catches his interest.</p>
+          </div></div>
+        </div>
+
+        <h2>Data and credits</h2>
+        <p class="ack">This publication makes use of data products from the Spectro-Photometer for the History of the Universe, Epoch of Reionization and Ices Explorer (SPHEREx), which is a joint project of the Jet Propulsion Laboratory and the California Institute of Technology, and is funded by the National Aeronautics and Space Administration.</p>
+        <p class="ack">SPHEREx Data Release 1 spectral images: <a href="https://doi.org/10.26131/IRSA678" rel="noopener">doi:10.26131/IRSA678</a>. SPHEREx DR1 all-sky spectral cube: <a href="https://doi.org/10.26131/IRSA679" rel="noopener">doi:10.26131/IRSA679</a>. Data are served by the <a href="https://irsa.ipac.caltech.edu/Missions/spherex.html" rel="noopener">NASA/IPAC Infrared Science Archive</a>.</p>
+        <p class="ack">This work has made use of data from the European Space Agency (ESA) mission Gaia (<a href="https://www.cosmos.esa.int/gaia" rel="noopener">cosmos.esa.int/gaia</a>), processed by the Gaia Data Processing and Analysis Consortium (DPAC). Funding for the DPAC has been provided by national institutions, in particular the institutions participating in the Gaia Multilateral Agreement.</p>
+        <p class="ack">The sky atlas uses Aladin Lite, and object names are resolved with Sesame, both developed at CDS, Strasbourg Astronomical Observatory, France.</p>
+
+        <h2>Disclaimer</h2>
+        <p class="muted">SPHEREx Time Lab is an independent project made for the NASA Space Apps Challenge. It is not an official NASA, IPAC or Caltech product, and NASA does not endorse it. Moving-object candidates shown by the lab are for further checking, not confirmed discoveries.</p>
+      </div>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <p>© <span data-year>2026</span> SPHEREx Time Lab · NASA Space Apps Challenge 2026. Not an official NASA product.</p>
+      <nav aria-label="Footer">
+        <a href="../lab/">Open the lab</a>
+        <a href="../about/">About</a>
+        <a href="../about/#team">Team</a>
+        <a href="https://github.com/RomanTkachenko-dev/spherex-time-lab-source" rel="noopener">Source code</a>
+        <a href="https://irsa.ipac.caltech.edu/Missions/spherex.html" rel="noopener">SPHEREx at IRSA</a>
+      </nav>
+    </div>
+  </footer>
+  <script>document.querySelectorAll('[data-year]').forEach(function (el) { el.textContent = new Date().getFullYear(); });</script>
+</body>
+</html>

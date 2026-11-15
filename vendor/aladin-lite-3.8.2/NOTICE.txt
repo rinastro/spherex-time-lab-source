@@ -1,0 +1,16 @@
+Aladin Lite 3.8.2 — CDS, Strasbourg astronomical data center.
+Unmodified ES module distributed from the official npm package aladin-lite.
+Source: https://github.com/cds-astro/aladin-lite/tree/3.8.2
+Package: https://registry.npmjs.org/aladin-lite/-/aladin-lite-3.8.2.tgz
+Package integrity (verified before extraction):
+sha512-/VGtxSWZ4StdKgwjmzqNkUY/3iTaBZJ5F6bN+nAfcK1NEATcAb2CYJX4U8FElpwYMgKrypYQV5KniRzhVbH+nA==
+Licence: LGPL-3.0-or-later; accompanying LICENSE, COPYING and COPYING.LESSER retained.
+The Aladin logo and link remain visible in the map. The module is dynamically
+loaded from this separate, replaceable file; the WebAssembly runtime is embedded.
+
+Reference sky imagery is fetched at runtime from the ESA HiPS mirror:
+https://skies.esac.esa.int/DSSColor
+Digitized Sky Survey — STScI/NASA; color composition and HiPS by CDS.
+DSS copyright and acknowledgments: https://archive.stsci.edu/dss/copyright.html
+HiPS metadata: https://skies.esac.esa.int/DSSColor/properties
+These reference images are not SPHEREx observations and are not time-synchronous.

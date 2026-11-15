@@ -1,0 +1,675 @@
+{
+  "schema_version": 1,
+  "title": "3I / ATLAS",
+  "description": "SPHEREx QR2 · D5 · 14 грудня 2025",
+  "source": "https://irsa.ipac.caltech.edu/data/SPHEREx/docs/comet3iatlas/index.html",
+  "observation_table_url": "https://irsa.ipac.caltech.edu/data/SPHEREx/docs/comet3iatlas/obscore_3I_Atlas.vot",
+  "observation_table_sha256": "11ff6a524c1b344b3c15c4875429b5b89fd053a18eef4d66328a5632382ef4af",
+  "frames": [
+    {
+      "id": "2025W50_2A_0685_1D5",
+      "observation_id": "2025W50_2A_0685_1",
+      "date": "2025-12-14T04:27:43.770",
+      "date_start": "2025-12-14T04:26:46.211",
+      "date_end": "2025-12-14T04:28:41.329",
+      "mjd": 61023.185923261,
+      "table_mjd_start": 61023.185257072,
+      "time_scale": "UTC",
+      "exposure_s": 113.5826,
+      "detector": "D5",
+      "release": "spherex_qr2",
+      "ra": 167.27908911453292,
+      "dec": 5.121576578325088,
+      "position_kind": "IRSA-predicted-per-exposure",
+      "ephemeris_reference_instant": "Not specified by the official observation table",
+      "wavelength_um": 3.95751545918269,
+      "bandwidth_um": 0.036518767426185365,
+      "spectral_calibration": "Approximate WCS-WAVE lookup from this FITS",
+      "image": "/data/atlas/sky-00.png",
+      "object_image": "/data/atlas/object-00.png",
+      "marker_sky": {
+        "x": 52.945292311133315,
+        "y": 153.5830413795766
+      },
+      "marker_object": {
+        "x": 127.5,
+        "y": 127.5
+      },
+      "quality": {
+        "level1": "Pass",
+        "level2": "Pass",
+        "flagged_display_fraction": 0.0791778564453125,
+        "flags_at_predicted_position": 2097152,
+        "bad_at_predicted_position": false,
+        "median_psf_fwhm_arcsec": 6.058744181779893,
+        "coordinate_roundtrip_arcsec": 3.3611075296060656e-08
+      },
+      "native_pixel": {
+        "x": 93.07336994683605,
+        "y": 144.2290817728289
+      },
+      "native_shape": [
+        281,
+        281
+      ],
+      "source_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W50_2A/l2b-v20-2025-349/5/level2_2025W50_2A_0685_1D5_spx_l2b-v20-2025-349.fits",
+      "cutout_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W50_2A/l2b-v20-2025-349/5/level2_2025W50_2A_0685_1D5_spx_l2b-v20-2025-349.fits?center=167.203066021%2C5.148071650&size=0.48",
+      "datalink_url": "https://irsa.ipac.caltech.edu/datalink/links/spherex?ID=ivo://irsa.ipac/spherex_qr2?2025W50_2A_0685_1/D5",
+      "sha256_cutout": "30d70b9dbeb684e508c9c07f8d4c48a72796e08f920db77409e0eea9e636f467",
+      "brightness_unit": "MJy / sr",
+      "measurement": null
+    },
+    {
+      "id": "2025W50_2A_0685_2D5",
+      "observation_id": "2025W50_2A_0685_2",
+      "date": "2025-12-14T04:29:52.701",
+      "date_start": "2025-12-14T04:28:55.142",
+      "date_end": "2025-12-14T04:30:50.260",
+      "mjd": 61023.187415518,
+      "table_mjd_start": 61023.186749329,
+      "time_scale": "UTC",
+      "exposure_s": 113.5826,
+      "detector": "D5",
+      "release": "spherex_qr2",
+      "ra": 167.27744067241156,
+      "dec": 5.122151278393035,
+      "position_kind": "IRSA-predicted-per-exposure",
+      "ephemeris_reference_instant": "Not specified by the official observation table",
+      "wavelength_um": 3.992232995754371,
+      "bandwidth_um": 0.03666550758912758,
+      "spectral_calibration": "Approximate WCS-WAVE lookup from this FITS",
+      "image": "/data/atlas/sky-01.png",
+      "object_image": "/data/atlas/object-01.png",
+      "marker_sky": {
+        "x": 54.56196249589924,
+        "y": 153.01737167013675
+      },
+      "marker_object": {
+        "x": 127.5,
+        "y": 127.5
+      },
+      "quality": {
+        "level1": "Pass",
+        "level2": "Pass",
+        "flagged_display_fraction": 0.0715484619140625,
+        "flags_at_predicted_position": 524288,
+        "bad_at_predicted_position": true,
+        "median_psf_fwhm_arcsec": 6.058744181779893,
+        "coordinate_roundtrip_arcsec": 5.9259174035233044e-09
+      },
+      "native_pixel": {
+        "x": 94.99631328851297,
+        "y": 143.08441664341834
+      },
+      "native_shape": [
+        280,
+        282
+      ],
+      "source_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W50_2A/l2b-v20-2025-349/5/level2_2025W50_2A_0685_2D5_spx_l2b-v20-2025-349.fits",
+      "cutout_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W50_2A/l2b-v20-2025-349/5/level2_2025W50_2A_0685_2D5_spx_l2b-v20-2025-349.fits?center=167.203066021%2C5.148071650&size=0.48",
+      "datalink_url": "https://irsa.ipac.caltech.edu/datalink/links/spherex?ID=ivo://irsa.ipac/spherex_qr2?2025W50_2A_0685_2/D5",
+      "sha256_cutout": "6b1c31331281eb1f0ec3eb9aef27e061d3263b11713cb9a19dba8391c4cac6d0",
+      "brightness_unit": "MJy / sr",
+      "measurement": null
+    },
+    {
+      "id": "2025W50_2A_0685_3D5",
+      "observation_id": "2025W50_2A_0685_3",
+      "date": "2025-12-14T04:32:01.631",
+      "date_start": "2025-12-14T04:31:04.072",
+      "date_end": "2025-12-14T04:32:59.189",
+      "mjd": 61023.188907763,
+      "table_mjd_start": 61023.188241574,
+      "time_scale": "UTC",
+      "exposure_s": 113.5826,
+      "detector": "D5",
+      "release": "spherex_qr2",
+      "ra": 167.27579224044294,
+      "dec": 5.12272596967069,
+      "position_kind": "IRSA-predicted-per-exposure",
+      "ephemeris_reference_instant": "Not specified by the official observation table",
+      "wavelength_um": 4.027233695779073,
+      "bandwidth_um": 0.036673968038204253,
+      "spectral_calibration": "Approximate WCS-WAVE lookup from this FITS",
+      "image": "/data/atlas/sky-02.png",
+      "object_image": "/data/atlas/object-02.png",
+      "marker_sky": {
+        "x": 56.17861968210359,
+        "y": 152.4517065088841
+      },
+      "marker_object": {
+        "x": 127.5,
+        "y": 127.5
+      },
+      "quality": {
+        "level1": "Pass",
+        "level2": "Pass",
+        "flagged_display_fraction": 0.0770111083984375,
+        "flags_at_predicted_position": 524288,
+        "bad_at_predicted_position": true,
+        "median_psf_fwhm_arcsec": 6.058744181779893,
+        "coordinate_roundtrip_arcsec": 1.9506001125848932e-08
+      },
+      "native_pixel": {
+        "x": 94.94019890430147,
+        "y": 143.89099155725125
+      },
+      "native_shape": [
+        281,
+        281
+      ],
+      "source_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W50_2A/l2b-v20-2025-349/5/level2_2025W50_2A_0685_3D5_spx_l2b-v20-2025-349.fits",
+      "cutout_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W50_2A/l2b-v20-2025-349/5/level2_2025W50_2A_0685_3D5_spx_l2b-v20-2025-349.fits?center=167.203066021%2C5.148071650&size=0.48",
+      "datalink_url": "https://irsa.ipac.caltech.edu/datalink/links/spherex?ID=ivo://irsa.ipac/spherex_qr2?2025W50_2A_0685_3/D5",
+      "sha256_cutout": "373304904c39ea028bc1ae65fd9a3c5ade2d5ae12d68653d3a5a38e9e6c26c80",
+      "brightness_unit": "MJy / sr",
+      "measurement": null
+    },
+    {
+      "id": "2025W50_2A_0685_4D5",
+      "observation_id": "2025W50_2A_0685_4",
+      "date": "2025-12-14T04:34:10.563",
+      "date_start": "2025-12-14T04:33:13.004",
+      "date_end": "2025-12-14T04:35:08.122",
+      "mjd": 61023.190400032,
+      "table_mjd_start": 61023.189733843,
+      "time_scale": "UTC",
+      "exposure_s": 113.5826,
+      "detector": "D5",
+      "release": "spherex_qr2",
+      "ra": 167.27414377886691,
+      "dec": 5.123300666018959,
+      "position_kind": "IRSA-predicted-per-exposure",
+      "ephemeris_reference_instant": "Not specified by the official observation table",
+      "wavelength_um": 4.062525330314805,
+      "bandwidth_um": 0.036737310720414584,
+      "spectral_calibration": "Approximate WCS-WAVE lookup from this FITS",
+      "image": "/data/atlas/sky-03.png",
+      "object_image": "/data/atlas/object-03.png",
+      "marker_sky": {
+        "x": 57.79530286611542,
+        "y": 151.8860322510445
+      },
+      "marker_object": {
+        "x": 127.5,
+        "y": 127.5
+      },
+      "quality": {
+        "level1": "Pass",
+        "level2": "Pass",
+        "flagged_display_fraction": 0.076873779296875,
+        "flags_at_predicted_position": 524288,
+        "bad_at_predicted_position": true,
+        "median_psf_fwhm_arcsec": 6.058744181779893,
+        "coordinate_roundtrip_arcsec": 1.5196919836369793e-08
+      },
+      "native_pixel": {
+        "x": 96.81966953625407,
+        "y": 143.69315858810907
+      },
+      "native_shape": [
+        281,
+        282
+      ],
+      "source_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W50_2A/l2b-v20-2025-349/5/level2_2025W50_2A_0685_4D5_spx_l2b-v20-2025-349.fits",
+      "cutout_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W50_2A/l2b-v20-2025-349/5/level2_2025W50_2A_0685_4D5_spx_l2b-v20-2025-349.fits?center=167.203066021%2C5.148071650&size=0.48",
+      "datalink_url": "https://irsa.ipac.caltech.edu/datalink/links/spherex?ID=ivo://irsa.ipac/spherex_qr2?2025W50_2A_0685_4/D5",
+      "sha256_cutout": "0749bcdd172f13f6357dd9d90705632dabaea133421dc19c19a816b49d20a4bd",
+      "brightness_unit": "MJy / sr",
+      "measurement": null
+    },
+    {
+      "id": "2025W50_2A_0698_1D5",
+      "observation_id": "2025W50_2A_0698_1",
+      "date": "2025-12-14T06:02:09.049",
+      "date_start": "2025-12-14T06:01:11.490",
+      "date_end": "2025-12-14T06:03:06.608",
+      "mjd": 61023.25149362,
+      "table_mjd_start": 61023.250827431,
+      "time_scale": "UTC",
+      "exposure_s": 113.5826,
+      "detector": "D5",
+      "release": "spherex_qr2",
+      "ra": 167.20665303736263,
+      "dec": 5.146825168641826,
+      "position_kind": "IRSA-predicted-per-exposure",
+      "ephemeris_reference_instant": "Not specified by the official observation table",
+      "wavelength_um": 4.097283521742396,
+      "bandwidth_um": 0.03680761648355656,
+      "spectral_calibration": "Approximate WCS-WAVE lookup from this FITS",
+      "image": "/data/atlas/sky-04.png",
+      "object_image": "/data/atlas/object-04.png",
+      "marker_sky": {
+        "x": 123.98240831176491,
+        "y": 128.72729458257365
+      },
+      "marker_object": {
+        "x": 127.5,
+        "y": 127.5
+      },
+      "quality": {
+        "level1": "Pass",
+        "level2": "Pass",
+        "flagged_display_fraction": 0.082672119140625,
+        "flags_at_predicted_position": 524288,
+        "bad_at_predicted_position": true,
+        "median_psf_fwhm_arcsec": 6.058744181779893,
+        "coordinate_roundtrip_arcsec": 1.8757536629606813e-09
+      },
+      "native_pixel": {
+        "x": 138.27249137040747,
+        "y": 140.50513094592552
+      },
+      "native_shape": [
+        281,
+        281
+      ],
+      "source_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W50_2A/l2b-v20-2025-349/5/level2_2025W50_2A_0698_1D5_spx_l2b-v20-2025-349.fits",
+      "cutout_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W50_2A/l2b-v20-2025-349/5/level2_2025W50_2A_0698_1D5_spx_l2b-v20-2025-349.fits?center=167.203066021%2C5.148071650&size=0.48",
+      "datalink_url": "https://irsa.ipac.caltech.edu/datalink/links/spherex?ID=ivo://irsa.ipac/spherex_qr2?2025W50_2A_0698_1/D5",
+      "sha256_cutout": "9248074419cab88e9da5dac7f53bdab32df8ba3b7a46a6223ed1b77ccad262a6",
+      "brightness_unit": "MJy / sr",
+      "measurement": null
+    },
+    {
+      "id": "2025W50_2A_0698_2D5",
+      "observation_id": "2025W50_2A_0698_2",
+      "date": "2025-12-14T06:04:17.981",
+      "date_start": "2025-12-14T06:03:20.422",
+      "date_end": "2025-12-14T06:05:15.539",
+      "mjd": 61023.252985888,
+      "table_mjd_start": 61023.252319699,
+      "time_scale": "UTC",
+      "exposure_s": 113.5826,
+      "detector": "D5",
+      "release": "spherex_qr2",
+      "ra": 167.20500444973925,
+      "dec": 5.14739968815294,
+      "position_kind": "IRSA-predicted-per-exposure",
+      "ephemeris_reference_instant": "Not specified by the official observation table",
+      "wavelength_um": 4.13313499914493,
+      "bandwidth_um": 0.036796699662387716,
+      "spectral_calibration": "Approximate WCS-WAVE lookup from this FITS",
+      "image": "/data/atlas/sky-05.png",
+      "object_image": "/data/atlas/object-05.png",
+      "marker_sky": {
+        "x": 125.59909006370988,
+        "y": 128.1616208258099
+      },
+      "marker_object": {
+        "x": 127.5,
+        "y": 127.5
+      },
+      "quality": {
+        "level1": "Pass",
+        "level2": "Pass",
+        "flagged_display_fraction": 0.077056884765625,
+        "flags_at_predicted_position": 524288,
+        "bad_at_predicted_position": true,
+        "median_psf_fwhm_arcsec": 6.058744181779893,
+        "coordinate_roundtrip_arcsec": 3.494432103983688e-08
+      },
+      "native_pixel": {
+        "x": 139.27417719650876,
+        "y": 140.093755176854
+      },
+      "native_shape": [
+        281,
+        281
+      ],
+      "source_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W50_2A/l2b-v20-2025-349/5/level2_2025W50_2A_0698_2D5_spx_l2b-v20-2025-349.fits",
+      "cutout_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W50_2A/l2b-v20-2025-349/5/level2_2025W50_2A_0698_2D5_spx_l2b-v20-2025-349.fits?center=167.203066021%2C5.148071650&size=0.48",
+      "datalink_url": "https://irsa.ipac.caltech.edu/datalink/links/spherex?ID=ivo://irsa.ipac/spherex_qr2?2025W50_2A_0698_2/D5",
+      "sha256_cutout": "a6c412d7e6720e9d58bc8b471d13426374072d9b9b65041b80dc5490e7eb36e9",
+      "brightness_unit": "MJy / sr",
+      "measurement": null
+    },
+    {
+      "id": "2025W50_2A_0698_3D5",
+      "observation_id": "2025W50_2A_0698_3",
+      "date": "2025-12-14T06:06:26.912",
+      "date_start": "2025-12-14T06:05:29.353",
+      "date_end": "2025-12-14T06:07:24.471",
+      "mjd": 61023.254478145,
+      "table_mjd_start": 61023.253811956,
+      "time_scale": "UTC",
+      "exposure_s": 113.5826,
+      "detector": "D5",
+      "release": "spherex_qr2",
+      "ra": 167.20335587130242,
+      "dec": 5.147974199186135,
+      "position_kind": "IRSA-predicted-per-exposure",
+      "ephemeris_reference_instant": "Not specified by the official observation table",
+      "wavelength_um": 4.169011136195612,
+      "bandwidth_um": 0.036731182755823044,
+      "spectral_calibration": "Approximate WCS-WAVE lookup from this FITS",
+      "image": "/data/atlas/sky-06.png",
+      "object_image": "/data/atlas/object-06.png",
+      "marker_sky": {
+        "x": 127.21575988281359,
+        "y": 127.59595124431851
+      },
+      "marker_object": {
+        "x": 127.5,
+        "y": 127.5
+      },
+      "quality": {
+        "level1": "Pass",
+        "level2": "Pass",
+        "flagged_display_fraction": 0.0740509033203125,
+        "flags_at_predicted_position": 524288,
+        "bad_at_predicted_position": true,
+        "median_psf_fwhm_arcsec": 6.058744181779893,
+        "coordinate_roundtrip_arcsec": 8.767750411249078e-09
+      },
+      "native_pixel": {
+        "x": 140.25832816747166,
+        "y": 139.78312038283426
+      },
+      "native_shape": [
+        281,
+        281
+      ],
+      "source_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W50_2A/l2b-v20-2025-349/5/level2_2025W50_2A_0698_3D5_spx_l2b-v20-2025-349.fits",
+      "cutout_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W50_2A/l2b-v20-2025-349/5/level2_2025W50_2A_0698_3D5_spx_l2b-v20-2025-349.fits?center=167.203066021%2C5.148071650&size=0.48",
+      "datalink_url": "https://irsa.ipac.caltech.edu/datalink/links/spherex?ID=ivo://irsa.ipac/spherex_qr2?2025W50_2A_0698_3/D5",
+      "sha256_cutout": "db566e582faa049682c4dd75d2dd9c925382b454b2b11165a604f2ef229db884",
+      "brightness_unit": "MJy / sr",
+      "measurement": null
+    },
+    {
+      "id": "2025W50_2A_0698_4D5",
+      "observation_id": "2025W50_2A_0698_4",
+      "date": "2025-12-14T06:08:35.842",
+      "date_start": "2025-12-14T06:07:38.283",
+      "date_end": "2025-12-14T06:09:33.401",
+      "mjd": 61023.255970391,
+      "table_mjd_start": 61023.255304201,
+      "time_scale": "UTC",
+      "exposure_s": 113.5826,
+      "detector": "D5",
+      "release": "spherex_qr2",
+      "ra": 167.20170730314166,
+      "dec": 5.148548701361233,
+      "position_kind": "IRSA-predicted-per-exposure",
+      "ephemeris_reference_instant": "Not specified by the official observation table",
+      "wavelength_um": 4.205072571582743,
+      "bandwidth_um": 0.03651855901592067,
+      "spectral_calibration": "Approximate WCS-WAVE lookup from this FITS",
+      "image": "/data/atlas/sky-07.png",
+      "object_image": "/data/atlas/object-07.png",
+      "marker_sky": {
+        "x": 128.83241670341098,
+        "y": 127.03028621098827
+      },
+      "marker_object": {
+        "x": 127.5,
+        "y": 127.5
+      },
+      "quality": {
+        "level1": "Pass",
+        "level2": "Pass",
+        "flagged_display_fraction": 0.0841827392578125,
+        "flags_at_predicted_position": 524288,
+        "bad_at_predicted_position": true,
+        "median_psf_fwhm_arcsec": 6.058744181779893,
+        "coordinate_roundtrip_arcsec": 8.63945374689284e-09
+      },
+      "native_pixel": {
+        "x": 141.21978730048255,
+        "y": 140.36255192023407
+      },
+      "native_shape": [
+        281,
+        282
+      ],
+      "source_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W50_2A/l2b-v20-2025-349/5/level2_2025W50_2A_0698_4D5_spx_l2b-v20-2025-349.fits",
+      "cutout_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W50_2A/l2b-v20-2025-349/5/level2_2025W50_2A_0698_4D5_spx_l2b-v20-2025-349.fits?center=167.203066021%2C5.148071650&size=0.48",
+      "datalink_url": "https://irsa.ipac.caltech.edu/datalink/links/spherex?ID=ivo://irsa.ipac/spherex_qr2?2025W50_2A_0698_4/D5",
+      "sha256_cutout": "4cfed149b11c56481621dff7b8baa688080d04e5fd9e2b40cc5421dd7f24781f",
+      "brightness_unit": "MJy / sr",
+      "measurement": null
+    },
+    {
+      "id": "2025W50_2A_0712_1D5",
+      "observation_id": "2025W50_2A_0712_1",
+      "date": "2025-12-14T07:40:55.263",
+      "date_start": "2025-12-14T07:39:57.704",
+      "date_end": "2025-12-14T07:41:52.822",
+      "mjd": 61023.32008406,
+      "table_mjd_start": 61023.31941787,
+      "time_scale": "UTC",
+      "exposure_s": 113.5826,
+      "detector": "D5",
+      "release": "spherex_qr2",
+      "ra": 167.13087450913795,
+      "dec": 5.173227913957699,
+      "position_kind": "IRSA-predicted-per-exposure",
+      "ephemeris_reference_instant": "Not specified by the official observation table",
+      "wavelength_um": 4.240891167155771,
+      "bandwidth_um": 0.03667536040843716,
+      "spectral_calibration": "Approximate WCS-WAVE lookup from this FITS",
+      "image": "/data/atlas/sky-08.png",
+      "object_image": "/data/atlas/object-08.png",
+      "marker_sky": {
+        "x": 198.29137875290542,
+        "y": 102.72673236922634
+      },
+      "marker_object": {
+        "x": 127.5,
+        "y": 127.5
+      },
+      "quality": {
+        "level1": "Pass",
+        "level2": "Pass",
+        "flagged_display_fraction": 0.123077392578125,
+        "flags_at_predicted_position": 2097152,
+        "bad_at_predicted_position": false,
+        "median_psf_fwhm_arcsec": 6.058744181779893,
+        "coordinate_roundtrip_arcsec": 2.1729691471354156e-08
+      },
+      "native_pixel": {
+        "x": 185.31672470679646,
+        "y": 136.46892098682176
+      },
+      "native_shape": [
+        281,
+        282
+      ],
+      "source_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W50_2A/l2b-v20-2025-349/5/level2_2025W50_2A_0712_1D5_spx_l2b-v20-2025-349.fits",
+      "cutout_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W50_2A/l2b-v20-2025-349/5/level2_2025W50_2A_0712_1D5_spx_l2b-v20-2025-349.fits?center=167.203066021%2C5.148071650&size=0.48",
+      "datalink_url": "https://irsa.ipac.caltech.edu/datalink/links/spherex?ID=ivo://irsa.ipac/spherex_qr2?2025W50_2A_0712_1/D5",
+      "sha256_cutout": "37dd0949b044daab97cae9f67609c05d8a996b16fc0f09f525ea3b78b352d31b",
+      "brightness_unit": "MJy / sr",
+      "measurement": null
+    },
+    {
+      "id": "2025W50_2A_0712_2D5",
+      "observation_id": "2025W50_2A_0712_2",
+      "date": "2025-12-14T07:43:04.194",
+      "date_start": "2025-12-14T07:42:06.635",
+      "date_end": "2025-12-14T07:44:01.753",
+      "mjd": 61023.321576317,
+      "table_mjd_start": 61023.320910127,
+      "time_scale": "UTC",
+      "exposure_s": 113.5826,
+      "detector": "D5",
+      "release": "spherex_qr2",
+      "ra": 167.12922579980165,
+      "dec": 5.173802232742921,
+      "position_kind": "IRSA-predicted-per-exposure",
+      "ephemeris_reference_instant": "Not specified by the official observation table",
+      "wavelength_um": 4.277465555235858,
+      "bandwidth_um": 0.0371995559698734,
+      "spectral_calibration": "Approximate WCS-WAVE lookup from this FITS",
+      "image": "/data/atlas/sky-09.png",
+      "object_image": "/data/atlas/object-09.png",
+      "marker_sky": {
+        "x": 199.90804821880727,
+        "y": 102.16106291132147
+      },
+      "marker_object": {
+        "x": 127.5,
+        "y": 127.5
+      },
+      "quality": {
+        "level1": "Pass",
+        "level2": "Pass",
+        "flagged_display_fraction": 0.099761962890625,
+        "flags_at_predicted_position": 2097152,
+        "bad_at_predicted_position": false,
+        "median_psf_fwhm_arcsec": 6.058744181779893,
+        "coordinate_roundtrip_arcsec": 1.5006003619216196e-08
+      },
+      "native_pixel": {
+        "x": 186.1779557724699,
+        "y": 136.85635993719066
+      },
+      "native_shape": [
+        281,
+        282
+      ],
+      "source_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W50_2A/l2b-v20-2025-349/5/level2_2025W50_2A_0712_2D5_spx_l2b-v20-2025-349.fits",
+      "cutout_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W50_2A/l2b-v20-2025-349/5/level2_2025W50_2A_0712_2D5_spx_l2b-v20-2025-349.fits?center=167.203066021%2C5.148071650&size=0.48",
+      "datalink_url": "https://irsa.ipac.caltech.edu/datalink/links/spherex?ID=ivo://irsa.ipac/spherex_qr2?2025W50_2A_0712_2/D5",
+      "sha256_cutout": "a07546cfbd64d846722b78f8574bb6d5d70f5c7e4ae681cd19fdae6044748f47",
+      "brightness_unit": "MJy / sr",
+      "measurement": null
+    },
+    {
+      "id": "2025W50_2A_0712_3D5",
+      "observation_id": "2025W50_2A_0712_3",
+      "date": "2025-12-14T07:45:13.125",
+      "date_start": "2025-12-14T07:44:15.566",
+      "date_end": "2025-12-14T07:46:10.684",
+      "mjd": 61023.323068574,
+      "table_mjd_start": 61023.322402384,
+      "time_scale": "UTC",
+      "exposure_s": 113.5826,
+      "detector": "D5",
+      "release": "spherex_qr2",
+      "ra": 167.127577087617,
+      "dec": 5.174376547217039,
+      "position_kind": "IRSA-predicted-per-exposure",
+      "ephemeris_reference_instant": "Not specified by the official observation table",
+      "wavelength_um": 4.3142522474891605,
+      "bandwidth_um": 0.03737482074612578,
+      "spectral_calibration": "Approximate WCS-WAVE lookup from this FITS",
+      "image": "/data/atlas/sky-10.png",
+      "object_image": "/data/atlas/object-10.png",
+      "marker_sky": {
+        "x": 201.52471767656772,
+        "y": 101.59539345626882
+      },
+      "marker_object": {
+        "x": 127.5,
+        "y": 127.5
+      },
+      "quality": {
+        "level1": "Pass",
+        "level2": "Pass",
+        "flagged_display_fraction": 0.07867431640625,
+        "flags_at_predicted_position": 524288,
+        "bad_at_predicted_position": true,
+        "median_psf_fwhm_arcsec": 6.058744181779893,
+        "coordinate_roundtrip_arcsec": 1.2627775538064747e-07
+      },
+      "native_pixel": {
+        "x": 187.07773976438446,
+        "y": 136.31044511410886
+      },
+      "native_shape": [
+        281,
+        281
+      ],
+      "source_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W50_2A/l2b-v20-2025-349/5/level2_2025W50_2A_0712_3D5_spx_l2b-v20-2025-349.fits",
+      "cutout_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W50_2A/l2b-v20-2025-349/5/level2_2025W50_2A_0712_3D5_spx_l2b-v20-2025-349.fits?center=167.203066021%2C5.148071650&size=0.48",
+      "datalink_url": "https://irsa.ipac.caltech.edu/datalink/links/spherex?ID=ivo://irsa.ipac/spherex_qr2?2025W50_2A_0712_3/D5",
+      "sha256_cutout": "e55648095f59cdc4e32ee3c7c8fae9017ff6fdc707467cd38cc0669b8f4f1a0d",
+      "brightness_unit": "MJy / sr",
+      "measurement": null
+    },
+    {
+      "id": "2025W50_2A_0712_4D5",
+      "observation_id": "2025W50_2A_0712_4",
+      "date": "2025-12-14T07:47:22.055",
+      "date_start": "2025-12-14T07:46:24.496",
+      "date_end": "2025-12-14T07:48:19.614",
+      "mjd": 61023.324560819,
+      "table_mjd_start": 61023.32389463,
+      "time_scale": "UTC",
+      "exposure_s": 113.5826,
+      "detector": "D5",
+      "release": "spherex_qr2",
+      "ra": 167.12592838474777,
+      "dec": 5.174950853142384,
+      "position_kind": "IRSA-predicted-per-exposure",
+      "ephemeris_reference_instant": "Not specified by the official observation table",
+      "wavelength_um": 4.351148788503947,
+      "bandwidth_um": 0.03741965477924935,
+      "spectral_calibration": "Approximate WCS-WAVE lookup from this FITS",
+      "image": "/data/atlas/sky-11.png",
+      "object_image": "/data/atlas/object-11.png",
+      "marker_sky": {
+        "x": 203.141375201571,
+        "y": 101.02972817646466
+      },
+      "marker_object": {
+        "x": 127.5,
+        "y": 127.5
+      },
+      "quality": {
+        "level1": "Pass",
+        "level2": "Pass",
+        "flagged_display_fraction": 0.0758819580078125,
+        "flags_at_predicted_position": 524288,
+        "bad_at_predicted_position": true,
+        "median_psf_fwhm_arcsec": 6.058744181779893,
+        "coordinate_roundtrip_arcsec": 7.961100818977338e-08
+      },
+      "native_pixel": {
+        "x": 187.9621570596506,
+        "y": 136.6992148070846
+      },
+      "native_shape": [
+        281,
+        281
+      ],
+      "source_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W50_2A/l2b-v20-2025-349/5/level2_2025W50_2A_0712_4D5_spx_l2b-v20-2025-349.fits",
+      "cutout_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W50_2A/l2b-v20-2025-349/5/level2_2025W50_2A_0712_4D5_spx_l2b-v20-2025-349.fits?center=167.203066021%2C5.148071650&size=0.48",
+      "datalink_url": "https://irsa.ipac.caltech.edu/datalink/links/spherex?ID=ivo://irsa.ipac/spherex_qr2?2025W50_2A_0712_4/D5",
+      "sha256_cutout": "0923ecf6fab2be72c27e5ed00be8bb9c116da4510f1c3a4f16ecf23dc70ebf1c",
+      "brightness_unit": "MJy / sr",
+      "measurement": null
+    }
+  ],
+  "display": {
+    "width": 256,
+    "height": 256,
+    "sky_fov_deg": 0.26,
+    "object_fov_deg": 0.1,
+    "sky_center_ra": 167.20306602075874,
+    "sky_center_dec": 5.148071649734162,
+    "orientation": "North up, East left",
+    "projection": "ICRS TAN",
+    "resampling": "bilinear, display only",
+    "stretch": "asinh",
+    "stretch_parameter": 18,
+    "low_MJy_sr": 0.2735847244743465,
+    "high_MJy_sr": 20.026133400001743,
+    "scale_scope": "same scale for every frame and both views",
+    "bad_pixel_policy": "The signal is retained for visual inspection. The optional orange overlay marks all FLAGS except SOURCE (21) and FULLSAMPLE (12), expanded to cover interpolation support. Flagged pixels are not independently verified and are not used for quantitative measurements.",
+    "noise_covariance_propagated": false,
+    "psf_matched": false
+  },
+  "limits": [
+    "Predicted markers are not independent detections.",
+    "No calibrated motion fit, centroid uncertainty or photometry is claimed.",
+    "Wavelength and bandwidth are approximate values at the predicted position; values vary across each image.",
+    "The frames are not PSF-matched or matched by full spectral response; brightness differences are not evidence of temporal variability.",
+    "A preliminary Gaia DR3 centroid crossmatch covers 12 QR2 D5 exposures in this field; it is not a WCS-only or mission-wide accuracy estimate."
+  ],
+  "attribution": "This publication makes use of data products from the Spectro-Photometer for the History of the Universe, Epoch of Reionization and Ices Explorer (SPHEREx), which is a joint project of the Jet Propulsion Laboratory and the California Institute of Technology, and is funded by the National Aeronautics and Space Administration.",
+  "dataset_doi": "10.26131/IRSA652",
+  "method_version": "viewer-0.1.0"
+}
